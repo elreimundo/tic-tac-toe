@@ -1,0 +1,48 @@
+body {
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.board {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -150px 0 0 -150px;
+  border: 1px solid white;
+  padding: 0;
+}
+
+.cell {
+  width: 90px;
+  height: 90px;
+  float: left;
+  position: relative;
+  border-radius: 5px;
+  background-color: gray;
+  margin: 5px;
+}
+
+.x:before, .o:before {
+  position: absolute;
+  top: 50%;
+  margin-top: -0.5em;
+  left: 50%;
+  margin-left: -0.4em;
+  font-size: 50px;
+  font-family: "Helvetica" sans-serif;
+}
+
+.x:before {
+  content: 'X';
+  color: blue;
+}
+
+.o:before {
+  content: 'O';
+  color: red;
+}
